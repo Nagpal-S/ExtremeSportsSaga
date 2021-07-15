@@ -4,6 +4,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container
+{
+    width: 100%;
+    overflow-x: hidden;
+}
 body
 {
     background-color: white;
@@ -263,6 +268,7 @@ ul div
     text-decoration: none;
     color: white;
     outline: none;
+    
 }
 .sub3 .content .bt:hover, .sub4 .content .bt:hover, .sub5 .content .bt:hover, .sub6 .content .bt:hover, .showmore
 {
@@ -337,7 +343,7 @@ ul div
 }
 .lowerbox
 {
-    height: 24vh;
+    height: 20vh;
     /* border: 1px solid black; */
     text-align: justify;
     padding: 5%;
@@ -355,6 +361,7 @@ ul div
     justify-content: center;
     display: flex;
     margin-top: 2%;
+    
 }
 .btn a
 {
@@ -427,4 +434,249 @@ ul div
     align-items: center;
     justify-content: center;
     font-family: 'Comfortaa', cursive;
+}
+.pxlow
+{
+    display: none ;
+}
+
+@media  screen and (max-width:1367px)
+{
+    .sec1
+    {
+        width: 100%;
+        height: 950px;
+        
+    }
+    .sec1 #layer1
+{
+    position: absolute;
+    left: 25%;
+    width: 100%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index:10;
+}
+.sec1 #layer2
+{
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    z-index:9;
+    bottom: 0%;
+}
+.sub3 .pic, .sub4 .pic, .sub5 .pic, .sub6 .pic
+{
+    height: 45vh;
+}
+}
+@media  screen and (max-width:1025px)
+{
+    .sec2 .quot
+    {
+        font-size: 30px;
+    }
+    .sub3, .sub4, .sub5, .sub6
+    {
+        display: none;
+    }
+    .pxlow
+    {
+        display: block;
+        height: max-content;
+        width: 100%;
+        padding: 2% 5%;
+    }
+    
+    .pxlow .content
+    {
+        margin: 5% 0%;
+        width: 100%;
+        /* background-color: red; */
+
+        
+    }
+    .pxlow .content p
+    {
+        text-align: justify;
+        font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+    .pxlow .content .bt
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00a8ff;
+    padding: 2%;
+    
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    /* word-spacing: 5px; */
+    letter-spacing: 2px;
+    }
+    .pxlow .content .bt a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }    
+    .pxlow .content .bt
+    {
+    box-shadow: 0 4px 8px 3px rgba(27, 22, 22, 0.2), 0 6px 20px 0px rgba(0, 0, 0, 0.19);
+    }
+    .bg
+    {
+        height: 30vh;
+        margin: 10% 0% 0% 0%;
+    }
+    .bglow
+    {
+        height: 40vh;
+    }
+
+    .sec7
+    {
+        margin-top: 5%;
+    }
+    .sub8 .list
+    {
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    .upperbox
+    {
+        height: 20vh;
+        
+    }
+    .lowerbox
+    {
+        height: 13vh;
+    }
+    
+}
+@media  screen and (max-width:376px)
+{
+    .sec1
+    {
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .sec1 #layer1
+    {
+        position: absolute;
+        left: 25%;
+        width: 100%;
+        /* bottom: 0%; */
+        transform: translateX(-50%);
+        z-index:10;
+    }
+    .sec1 #layer2
+    {
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        z-index:9;
+        /* bottom: 0%; */
+    }
+    .sec2 .quot
+    {
+        font-size: 18px;
+    }
+    .sec1 #text
+    {
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        transform: translateY(150%)
+        
+    }
+    nav
+    {
+        padding: 8% 0%;
+    }
+    .burger .menu
+    {
+        margin: 70%;
+    }
+    .logo
+    {
+        font-size: 15px;
+    }
+    .bg
+    {
+        /* margin: 0% auto; */
+        width: 100%;
+        height: 30vh; 
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sec3 h1, .sec4 h1, .sec5 h1, .sec6 h1, .sec8 h1
+    {
+        font-size: 35px;
+    }
+    .pxlow
+    {
+        margin: 5% auto 20%;
+    }
+    .pxlow .content
+    {
+        font-size: 10px;
+    }
+    .pxlow .content .bt
+    {
+        border-radius: 0% !important;
+        width: 40%;
+        padding: 3% 0%;
+    
+    }
+    .pxlow .content .bt a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    } 
+    .sec7
+    {
+        margin: 5% auto 20%;
+    } 
+    .showmore
+    {
+        font-size: 12px;
+        padding: 3% 2%;
+    }
+    .sub8 .list
+    {
+        
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    .upperbox
+    {
+        height: 20vh;
+        
+    }
+    .lowerbox
+    {
+        height: 20vh;
+    }
+    .upfoot h1, .lowfoot
+    {
+        font-size: 10px;
+    }
+    .upfoot a
+    {
+        font-size: 8px;
+    }
 }
