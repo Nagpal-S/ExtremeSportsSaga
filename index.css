@@ -65,7 +65,7 @@ ul div
 
 .burger
 {
-   width: max-width;
+   width: max-content;
    /* background-color: red; */
    text-align: right;
    padding-left: 0.5%;
