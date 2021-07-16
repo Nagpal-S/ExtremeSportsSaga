@@ -38,11 +38,19 @@
 </head>
 
 <body>
+    
 
     <div class="container">
         <nav>
+            <div class="navup">
+                <div class="navlinks page1"><a href="">home</a></div>
+                <div class="navlinks page2"><a href="">compare hotels</a></div>
+                <div class="navlinks page3"><a href="">calculate trip</a></div>
+                <div class="navlinks page4"><a href="">about us</a></div>
+                <div class="navlinks page5"><a href="">contact us</a></div>
+            </div>
             <ul>
-                <div class="burger">
+                <div class="burger" onclick="myfun()" >
                     <div class="menu"></div>
                     <div class="menu"></div>
                     <div class="menu"></div>
@@ -71,6 +79,7 @@
                 <p> When you see someone putting on his Big Boots, you can be pretty sure that an Adventure is going to
                     happen. </p><br>
                 <p class="auth">-A.A. Milne</p>
+                
             </div>
 
         </section>
@@ -540,6 +549,13 @@
             layer2.style.width = (100 + scroll / 5) + '%';
             text.style.top = -scroll / 20 + '%'
         })
+
+
+        function myfun(){
+            const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('nav-active');
+        }
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -548,6 +564,7 @@
             duration: 1000,
         });
     </script>
+    
 </body>
 
 </html>
