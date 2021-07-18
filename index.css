@@ -638,10 +638,7 @@ ul div
     {
         padding: 8% 0%;
     }
-    .burger .menu
-    {
-        margin: 70%;
-    }
+    
     .logo
     {
         font-size: 15px;
@@ -714,4 +711,17 @@ ul div
     {
         font-size: 8px;
     }
+    .burger
+    {
+        width: 15%;
+    }
+    .burger .menu
+{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 20%;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
 }
